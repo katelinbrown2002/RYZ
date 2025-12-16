@@ -6,13 +6,13 @@ body {
   font-family: 'Nunito', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #ffffff; /* clean white */
+  background-color: #fdfaf5; /* soft cream */
   color: #333333;
   line-height: 1.6;
 }
 
 header {
-  background: linear-gradient(135deg, #ff9a8b, #ff6a88, #ff99ac); /* lively pink/purple gradient */
+  background: linear-gradient(135deg, #5d4037, #8d6e63); /* chocolate brown gradient */
   color: #fff;
   text-align: center;
   padding: 30px 15px;
@@ -27,7 +27,7 @@ h1 {
 
 h2 {
   font-family: 'Canela', serif;
-  color: #ff6a88; /* highlight color */
+  color: #5d4037; /* chocolate accent */
   font-size: 1.8em;
   margin-bottom: 15px;
 }
@@ -36,17 +36,17 @@ h2 {
 section {
   padding: 20px;
   margin: 15px;
-  background-color: #f9faff; /* subtle cool white */
+  background-color: #fff; /* clean cards */
   border-radius: 16px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.05);
 }
 
 /* === Devotional Section === */
 #daily-devotional {
-  background: linear-gradient(135deg, #a18cd1, #fbc2eb); /* purple-pink lively gradient */
-  border-left: 6px solid #ff6a88;
+  background: linear-gradient(135deg, #8d6e63, #a1887f); /* warm brown gradient */
+  border-left: 6px solid #5d4037;
   padding: 20px;
-  color: #333;
+  color: #fff;
   font-weight: 600;
 }
 
@@ -67,7 +67,7 @@ section {
 
 /* === Buttons === */
 button {
-  background: linear-gradient(135deg, #ff9a8b, #ff6a88);
+  background: linear-gradient(135deg, #5d4037, #8d6e63); /* chocolate gradient */
   color: #fff;
   border: none;
   padding: 10px 16px;
