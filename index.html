@@ -1,59 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>RYEZ</title>
-
-  <link rel="manifest" href="manifest.json">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RYEZ - Faith & Fitness</title>
   <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
+  <header>
+    <h1>RYEZ</h1>
+    <p>Faith, Fitness & Daily Growth</p>
+  </header>
 
-<header>
-  <h1>RYEZ</h1>
-  <p class="subtitle">Rise in strength. Walk in reverence.</p>
-</header>
-
-<main>
-
-  <section class="card">
+  <!-- Daily Devotional -->
+  <section id="daily-devotional">
     <h2>Daily Scripture</h2>
-    <p id="scripture">
-      “Strength and dignity are her clothing.” — Proverbs 31:25
-    </p>
+    <div id="scripture">Loading devotional...</div>
   </section>
 
-  <section class="card">
-    <h2>Devotion</h2>
-    <p>Fear of the Lord is the beginning of wisdom.</p>
-    <button>Read</button>
-  </section>
-
-  <section class="card">
-    <h2>Movement</h2>
-    <p>Gentle strength + breath (20 min)</p>
-    <button>Begin</button>
-  </section>
-
-  <section class="card">
-    <h2>Nourishment</h2>
-    <p>Simple, nourishing meal for today.</p>
-    <button>View</button>
-  </section>
-
-  <section class="card">
+  <!-- Habits Tracker -->
+  <section id="habits-section">
     <h2>Daily Habits</h2>
-    <label><input type="checkbox"> Prayer</label><br>
-    <label><input type="checkbox"> Movement</label><br>
-    <label><input type="checkbox"> Nourishing Meal</label><br>
-    <label><input type="checkbox"> Order One Thing</label>
+    <div id="habits">
+      <label><input type="checkbox"> Pray for my family</label>
+      <label><input type="checkbox"> Morning exercise</label>
+      <label><input type="checkbox"> Meal prep for today</label>
+      <label><input type="checkbox"> Read a Bible passage</label>
+    </div>
   </section>
 
-</main>
+  <!-- Workouts -->
+  <section id="workouts-section">
+    <h2>Workouts</h2>
+    <div id="workouts"></div>
+  </section>
 
-<script src="app.js"></script>
+  <!-- Recipes -->
+  <section id="recipes-section">
+    <h2>Recipes</h2>
+    <div id="recipes"></div>
+  </section>
 
+  <script src="app.js"></script>
 </body>
 </html>
