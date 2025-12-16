@@ -1,60 +1,102 @@
-/* General Reset */
+/* === Fonts === */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Canela&display=swap');
+
+/* === Base Styles === */
 body {
   font-family: 'Nunito', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fdfaf5;
-  color: #333;
+  background-color: #ffffff; /* clean white */
+  color: #333333;
+  line-height: 1.6;
 }
 
 header {
-  background-color: #c6a961; /* gold/brass */
+  background: linear-gradient(135deg, #ff9a8b, #ff6a88, #ff99ac); /* lively pink/purple gradient */
   color: #fff;
   text-align: center;
-  padding: 20px 10px;
+  padding: 30px 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 h1 {
-  margin: 0;
   font-family: 'Canela', serif;
-  font-size: 2em;
+  font-size: 2.6em;
+  margin: 0;
 }
 
 h2 {
-  font-family: 'The Seasons', cursive;
-  color: #5a4a3f;
-  margin-bottom: 10px;
+  font-family: 'Canela', serif;
+  color: #ff6a88; /* highlight color */
+  font-size: 1.8em;
+  margin-bottom: 15px;
 }
 
+/* === Sections === */
 section {
-  padding: 15px;
-  margin: 10px;
+  padding: 20px;
+  margin: 15px;
+  background-color: #f9faff; /* subtle cool white */
+  border-radius: 16px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
 }
 
+/* === Devotional Section === */
+#daily-devotional {
+  background: linear-gradient(135deg, #a18cd1, #fbc2eb); /* purple-pink lively gradient */
+  border-left: 6px solid #ff6a88;
+  padding: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* === Cards === */
 .card {
-  border: 1px solid #ddd;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 8px;
-  background: #fff;
+  border-radius: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 18px 22px;
+  margin-bottom: 14px;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+/* === Buttons === */
 button {
-  margin-top: 5px;
-  padding: 5px 10px;
-  background-color: #c6a961;
+  background: linear-gradient(135deg, #ff9a8b, #ff6a88);
   color: #fff;
   border: none;
-  border-radius: 5px;
+  padding: 10px 16px;
+  margin-top: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 button:hover {
-  background-color: #b08c4f;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
-/* Habits checkboxes */
+/* === Habits === */
 #habits label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   cursor: pointer;
+  font-weight: 500;
+}
+
+/* === Responsive tweaks === */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
 }
