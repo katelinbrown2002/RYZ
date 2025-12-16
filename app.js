@@ -1,4 +1,4 @@
-// 1️⃣ Service Worker Registration (offline support)
+// 1️⃣ Service Worker Registration
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('service-worker.js')
     .then(() => console.log('Service Worker Registered'))
@@ -40,7 +40,7 @@ function getDailyDevotional() {
 
 getDailyDevotional();
 
-// 4️⃣ WORKOUT LIST
+// 4️⃣ WORKOUTS LIST
 const workouts = [
   { name: "Pilates Beginner", duration: "30 min", details: "Full-body Pilates routine for beginners." },
   { name: "Strength Training", duration: "45 min", details: "Weight-based exercises focusing on core and arms." },
