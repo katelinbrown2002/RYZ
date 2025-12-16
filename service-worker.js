@@ -1,4 +1,4 @@
-const cacheName = 'ryez-v1';
+const cacheName = 'ryz-v1';
 const assets = [
   '/',
   '/index.html',
